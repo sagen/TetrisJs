@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+#board, #overlay {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border: 5px inset gray;
+}
+#board, #preview{
+	background-color: #000;
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#777777', endColorstr='#000000'); /* for IE */
+	background: -webkit-gradient(linear, right top, left bottom, from(#777), to(#000));
+	background: -moz-linear-gradient(45deg,  #777,  #000);*/
+
+
+}
+#overlay {
+    background-color: #444;
+    filter: alpha(opacity = 90); /* internet explorer */
+    -khtml-opacity: 0.9; /* khtml, old safari */
+    -moz-opacity: 0.9; /* mozilla, netscape */
+    opacity: 0.9; /* fx, safari, opera */
+    z-index: 2;
+    text-align: center;
+}
+
+#overlay h1 {
+    color: white;
+}
+
+#overlay h1#gameOver {
+    font-size: 2em;
+    display: none;
+    margin-top: -15px;
+    margin-bottom: 1px;
+}
+
+#buttonWrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+#continueButton {
+    display: none;
+}
+
+#restartButton {
+    display: none;
+}
+
+#keyMap {
+    margin: 0 auto;
+    color: white;
+}
+
+#keyMap tr td {
+    text-align: left;
+    padding-top: 10px;
+}
+
+#keyMap tr td.kmKey {
+    text-align: center;
+    vertical-align: top;
+    padding-right: 10px;
+    color: #CCC;
+}
+
+.overlayButton {
+	border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    margin: 0 auto;
+    text-align: center;
+    height: 40px;
+    width: 80%;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    background-color: #999;
+}
+
+.overlayButton:hover {
+    background-color: #666;
+}
+
+#preview {
+    position: absolute;
+    top: 10px;
+    border: 5px inset gray;
+}
+
+#previewContainer {
+    position: relative;
+}
+
+#statsWrap {
+    position: absolute;
+    font-size: 10pt;
+    border: 5px inset gray;
+    background-color: #000;
+    color: #FFF;
+}
+
+#statsWrap tr td.statDesc {
+    margin: 2px 0 3px 0;
+    text-indent: 3px;
+	font-size:.7em;
+}
+
+#buttons {
+    position: absolute;
+}
+
+div.activeBlock {
+    border: 2px solid #99FFFF;
+    width: 16px;
+    height: 16px;
+}
+
+div.activeType0 {
+    border-color: #99FFFF #00D8D8 #007878 #00D8D8;
+    background-color: #00F0F0;
+}
+
+div.activeType1 {
+    background-color: #A000F0;
+    border-color: #DD99FF #9000D8 #500078 #9000D8;
+}
+
+div.activeType2 {
+    background-color: #F0A000;
+    border-color: #FFDD99 #D89000 #785000 #D89000;
+}
+
+div.activeType3 {
+    background-color: #0000F0;
+    border-color: #9999FF #0000D8 #000078 #0000D8;
+}
+
+div.activeType4 {
+    background-color: #F0F000;
+    border-color: #FFFF99 #D8D800 #787800 #D8D800;
+}
+
+div.activeType5 {
+    background-color: #00F000;
+    border-color: #99FF99 #00D800 #007800 #00D800;
+}
+
+div.activeType6 {
+    background-color: #F00000;
+    border-color: #FFFF99 #D80000 #780000 #D80000;
+}
+
+div.explodingBlock {
+    border: 2px groove #CCCCCC;
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+}
+
+div.backgroundBlock {
+    border-width: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+}
